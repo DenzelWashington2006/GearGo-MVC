@@ -116,63 +116,63 @@
 
 flowchart LR
 
-&#x20;   Customer(\[Customer])
+    Customer(\[Customer])
 
-&#x20;   Staff(\[Staff])
+    Staff(\[Staff])
 
-&#x20;   Manager(\[Manager])
-
-
-
-&#x20;   subgraph GearGo System
-
-&#x20;       C1(Browse equipment)
-
-&#x20;       C2(View equipment details)
-
-&#x20;       C3(Request a rental)
-
-&#x20;       C4(View my rental requests)
-
-&#x20;       S1(Add equipment)
-
-&#x20;       S2(Update equipment)
-
-&#x20;       S3(Review rental requests)
-
-&#x20;       S4(Approve or reject request)
-
-&#x20;       M1(Manage catalogue)
-
-&#x20;       M2(Manage users)
-
-&#x20;       M3(View all rentals)
-
-&#x20;   end
+    Manager(\[Manager])
 
 
 
-&#x20;   Customer --- C1
+    subgraph GearGo System
 
-&#x20;   Customer --- C2
+        C1(Browse equipment)
 
-&#x20;   Customer --- C3
+        C2(View equipment details)
 
-&#x20;   Customer --- C4
+        C3(Request a rental)
 
-&#x20;   Staff --- S1
+        C4(View my rental requests)
 
-&#x20;   Staff --- S2
+        S1(Add equipment)
 
-&#x20;   Staff --- S3
+        S2(Update equipment)
 
-&#x20;   Staff --- S4
+        S3(Review rental requests)
 
-&#x20;   Manager --- M1
+        S4(Approve or reject request)
 
-&#x20;   Manager --- M2
+        M1(Manage catalogue)
 
-&#x20;   Manager --- M3
+        M2(Manage users)
+
+        M3(View all rentals)
+
+    end
+
+
+
+    Customer --- C1
+
+    Customer --- C2
+
+    Customer --- C3
+
+    Customer --- C4
+
+    Staff --- S1
+
+    Staff --- S2
+
+    Staff --- S3
+
+    Staff --- S4
+
+    Manager --- M1
+
+    Manager --- M2
+
+    Manager --- M3
 
 ```
 
