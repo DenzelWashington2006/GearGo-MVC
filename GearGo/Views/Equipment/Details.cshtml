@@ -1,0 +1,22 @@
+@model GearGo.Models.Equipment
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<h1>@Model.Name</h1>
+
+<dl class="row">
+    <dt class="col-sm-3">Description</dt>
+    <dd class="col-sm-9">@Model.Description</dd>
+
+    <dt class="col-sm-3">Category</dt>
+    <dd class="col-sm-9">@Model.Category</dd>
+
+    <dt class="col-sm-3">Daily Rate</dt>
+    <dd class="col-sm-9">R @Model.DailyRate.ToString("N2")</dd>
+
+    <dt class="col-sm-3">Available</dt>
+    <dd class="col-sm-9">@(Model.IsAvailable ? "Yes" : "No")</dd>
+</dl>
+
+<a asp-action="Index">Back to list</a>
